@@ -1,6 +1,6 @@
 ## Trabajo práctico integrador IA
 
-### Levantar el proyecto en el entorno local
+### Levantar el proyecto en el entorno local linux
 
 Este repositorio cuenta con un container de Docker que incluye los instrumentos necesarios para poder levantarse localmente un server de Jupyter.
 
@@ -30,3 +30,14 @@ make workspace
 make token
     #nos devuelve el token de autenticación a JupyterLab
 ```
+***
+### Levantar el proyecto en el entorno local en WIN
+```bash
+ docker compose up
+    #levanta el container y si es la primera vez, buildea la img 
+ docker compose down
+    #baja el container 
+```
+### Consideraciones en Windows
+
+Una vez desplegado el container, se puede visualizar por consola el token para el ingreso a la notebook
